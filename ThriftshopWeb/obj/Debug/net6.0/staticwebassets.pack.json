@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ThriftshopWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

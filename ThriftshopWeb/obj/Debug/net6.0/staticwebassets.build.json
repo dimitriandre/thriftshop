@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jy/tOPbvhECnPMFMRVeJi1GZUEpVdVMTpKB2dXgO/bA=",
+  "Hash": "ilq5qnEZXVUJjrs/nHn3CVgAckg6VDUZ6WMwItuU5zw=",
   "Source": "ThriftshopWeb",
   "BasePath": "_content/ThriftshopWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ThriftshopWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "ThriftshopWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\",
+      "BasePath": "_content/ThriftshopWeb",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\css\\site.css",
