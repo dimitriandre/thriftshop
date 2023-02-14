@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ThriftshopWeb.Data;
+using ThriftshopWeb.Models;
 
 namespace ThriftshopWeb.Controllers
 {
@@ -15,8 +16,8 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Index()
         {
-            var objCategoryList = _db.Categories.ToList();
-            return View();
+            IEnumerable<Category> objCategoryList = _db.Categories.ToList();
+            return View(objCategoryList);
         }
     }
 }
