@@ -51,7 +51,7 @@ namespace ThriftshopWeb.Controllers
         {
             if (id == null || id == 0)
             {
-                return NotFound()
+                return NotFound();
             }
             var categoryFromDb = _db.Categories.Find(id);
 
@@ -65,7 +65,7 @@ namespace ThriftshopWeb.Controllers
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
+        public IActionResult Edit(Category obj)
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
