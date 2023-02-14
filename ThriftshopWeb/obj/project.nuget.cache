@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WhbRqVUzzqpQnETeSc3h4STY0fXLCBKQ0fgiPRA14BNxjQ+DfE+jhM3pATAijd4eYP2FfGGJZV+r6JPLOLvcEA==",
+  "dgSpecHash": "UtuQAm27Oyt4hiWC2QKaiHReyNTLpucGzvCLvuuCdujvgi3yMZl5hoqwBroZrSOarPBMiJprSpKGm7XhaHvGgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\ThriftshopWeb.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.13\\microsoft.aspnetcore.mvc.razor.extensions.5.0.13.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.13\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.13.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
@@ -45,6 +47,7 @@
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0-preview.7.21377.19\\microsoft.extensions.configuration.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.dependencymodel\\5.0.0\\microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0-preview.7.21377.19\\microsoft.extensions.logging.6.0.0-preview.7.21377.19.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0-preview.7.21377.19\\microsoft.extensions.logging.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.extensions.options\\6.0.0-preview.7.21377.19\\microsoft.extensions.options.6.0.0-preview.7.21377.19.nupkg.sha512",
