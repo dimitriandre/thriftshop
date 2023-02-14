@@ -12,7 +12,7 @@ build_property.RootNamespace = ThriftshopWeb
 build_property.ProjectDir = C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb
 build_property._RazorSourceGeneratorDebug = 
 
@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DimitriAndre/source/repos/Thriftshop/ThriftshopWeb/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DimitriAndre/source/repos/Thriftshop/ThriftshopWeb/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DimitriAndre/source/repos/Thriftshop/ThriftshopWeb/Views/Category/Index.cshtml]
