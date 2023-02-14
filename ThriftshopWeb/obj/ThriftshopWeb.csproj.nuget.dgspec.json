@@ -47,7 +47,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[5.0.13, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

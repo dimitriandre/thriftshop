@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NraEQh9nPbBz+yNb3IXwxeaSuoF25iGHAXimghw47gad3SpcTRXs5H6wE4VMpfh98JiONBaa/xch2fvyNNwSzQ==",
+  "dgSpecHash": "Su1R9ExpF0WnEvNaX0GIvedENZlAv3P/B66gOE7Z8WXrbYuFSi09LAcWbB+7dPYJk0T3IFJA3F1n7LpELZS3EQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\ThriftshopWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",
-    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.17\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.17.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.13\\microsoft.aspnetcore.mvc.razor.extensions.5.0.13.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.13\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.13.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0-preview.7.21378.6\\microsoft.aspnetcore.razor.language.6.0.0-preview.7.21378.6.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
