@@ -27,9 +27,13 @@ namespace ThriftshopWeb.Controllers
         }
 
         //POST
-        public IActionResult Create()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Category obj)
         {
-            return View();
+            _db.Categories.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
