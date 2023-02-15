@@ -10,7 +10,7 @@ using ThriftshopWeb.Models;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    internal class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private ApplicationDbContext _db;
 
