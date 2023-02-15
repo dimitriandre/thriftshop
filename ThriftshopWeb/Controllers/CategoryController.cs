@@ -90,7 +90,8 @@ namespace ThriftshopWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.Categories.Find(id);
+            //var categoryFromDb = _db.Categories.Find(id);
+            var categoryFromDb = _db.Categories.FirstOrDefault(u => u.Name == "id");
 
             if (categoryFromDb == null)
             {
