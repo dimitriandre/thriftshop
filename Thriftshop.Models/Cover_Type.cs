@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace ThriftshopWeb.Models;
+namespace Thriftshop.Models;
 
 public class Cover_Type
 {
