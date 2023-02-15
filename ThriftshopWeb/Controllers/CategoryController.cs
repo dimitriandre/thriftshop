@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Thriftshop.DataAccess.Repository.IRepository;
 using ThriftshopWeb.DataAccess;
 using ThriftshopWeb.Models;
 
@@ -6,9 +7,9 @@ namespace ThriftshopWeb.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ICategoryRepository _db;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(ICategoryRepository db)
         {
             _db = db;
 
@@ -16,7 +17,7 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _db.Categories.ToList();
+            IEnumerable<Category> objCategoryList = _db.GetAll();
             return View(objCategoryList);
         }
 
@@ -39,8 +40,8 @@ namespace ThriftshopWeb.Controllers
                 
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(obj);
-                _db.SaveChanges();
+                _db.Add(obj);
+                _db.Save();
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -54,7 +55,7 @@ namespace ThriftshopWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.Categories.Find(id);
+            var categoryFromDb = _db.GetFirstOrDefault(u=>u.Id==id);
 
             if (categoryFromDb == null)
             {
@@ -76,8 +77,8 @@ namespace ThriftshopWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(obj);
-                _db.SaveChanges();
+                _db.Update(obj);
+                _db.Save();
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -91,7 +92,7 @@ namespace ThriftshopWeb.Controllers
                 return NotFound();
             }
             //var categoryFromDb = _db.Categories.Find(id);
-            var categoryFromDb = _db.Categories.FirstOrDefault(u => u.Name == "id");
+            var categoryFromDb = _db.GetFirstOrDefault(u => u.Id == id);
 
             if (categoryFromDb == null)
             {
@@ -106,15 +107,15 @@ namespace ThriftshopWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _db.Categories.Find(id);
+            var obj = _db.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
 
 
-            _db.Categories.Remove(obj);
-            _db.SaveChanges();
+            _db.Remove(obj);
+            _db.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
