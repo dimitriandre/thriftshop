@@ -16,9 +16,12 @@ namespace Thriftshop.DataAccess.Repository.IRepository
         {
             _db = db;
             Category = new CategoryRepository(_db);
+            Cover_Type = new Cover_TypeRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
+
+        public ICover_TypeRepository Cover_Type { get; private set; }
 
         public void Save()
         {
