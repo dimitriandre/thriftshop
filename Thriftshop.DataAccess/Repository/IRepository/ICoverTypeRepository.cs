@@ -7,8 +7,8 @@ using Thriftshop.Models;
 
 namespace Thriftshop.DataAccess.Repository.IRepository
 {
-    public interface ICover_TypeRepository : IRepository<Cover_Type>
+    public interface ICoverTypeRepository : IRepository<CoverType>
     {
-        public void Update(Cover_Type obj);
+        public void Update(CoverType obj);
     }
 }

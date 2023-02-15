@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace ThriftshopWeb.Migrations
+namespace Thriftshop.DataAccess.Migrations
 {
-    public partial class AddCover_TypeToDatabase : Migration
+    public partial class AddCoverTypeToDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

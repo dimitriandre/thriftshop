@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.DataAccess.Repository;
-using ThriftshopWeb.DataAccess;
+using Thriftshop.DataAccess;
 
 
 var builder = WebApplication.CreateBuilder(args);

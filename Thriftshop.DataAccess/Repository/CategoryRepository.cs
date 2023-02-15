@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Thriftshop.DataAccess.Repository.IRepository;
-using ThriftshopWeb.DataAccess;
+using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
 
 namespace Thriftshop.DataAccess.Repository

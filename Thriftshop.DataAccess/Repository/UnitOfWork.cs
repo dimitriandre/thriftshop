@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThriftshopWeb.DataAccess;
+using Thriftshop.DataAccess;
 
 namespace Thriftshop.DataAccess.Repository.IRepository
 {
@@ -16,12 +16,12 @@ namespace Thriftshop.DataAccess.Repository.IRepository
         {
             _db = db;
             Category = new CategoryRepository(_db);
-            Cover_Type = new Cover_TypeRepository(_db);
+            CoverType = new CoverTypeRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
 
-        public ICover_TypeRepository Cover_Type { get; private set; }
+        public ICoverTypeRepository CoverType { get; private set; }
 
         public void Save()
         {

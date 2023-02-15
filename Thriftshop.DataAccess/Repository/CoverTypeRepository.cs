@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.Models;
-using ThriftshopWeb.DataAccess;
+using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    public class Cover_TypeRepository : Repository<Cover_Type>, ICover_TypeRepository
+    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
     {
         private ApplicationDbContext _db;
 
-        public Cover_TypeRepository(ApplicationDbContext db) : base(db)
+        public CoverTypeRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public void Update(Cover_Type obj)
+        public void Update(CoverType obj)
         {
-            _db.Cover_Types.Update(obj);
+            _db.CoverTypes.Update(obj);
         }
     }
 }

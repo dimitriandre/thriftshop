@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Thriftshop.DataAccess.Repository.IRepository;
-using ThriftshopWeb.DataAccess;
+using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
 
 namespace ThriftshopWeb.Controllers

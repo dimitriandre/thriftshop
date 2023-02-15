@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Thriftshop.Models;
 using ThriftshopWeb.Models;
 
-namespace ThriftshopWeb.DataAccess
+namespace Thriftshop.DataAccess
 {
     public class ApplicationDbContext :DbContext
     {
@@ -11,6 +12,7 @@ namespace ThriftshopWeb.DataAccess
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CoverType> CoverTypes { get; set; }
 
     }
 }
