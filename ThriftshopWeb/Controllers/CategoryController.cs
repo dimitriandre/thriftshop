@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ThriftshopWeb.Data;
+using ThriftshopWeb.DataAccess;
 using ThriftshopWeb.Models;
 
 namespace ThriftshopWeb.Controllers

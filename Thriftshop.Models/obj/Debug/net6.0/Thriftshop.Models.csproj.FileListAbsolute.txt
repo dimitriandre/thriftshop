@@ -1,0 +1,12 @@
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\bin\Debug\net6.0\Thriftshop.Models.deps.json
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\bin\Debug\net6.0\Thriftshop.Models.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\bin\Debug\net6.0\Thriftshop.Models.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.csproj.AssemblyReference.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.AssemblyInfoInputs.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.AssemblyInfo.cs
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.csproj.CoreCompileInputs.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\refint\Thriftshop.Models.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\Thriftshop.Models.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.Models\obj\Debug\net6.0\ref\Thriftshop.Models.dll

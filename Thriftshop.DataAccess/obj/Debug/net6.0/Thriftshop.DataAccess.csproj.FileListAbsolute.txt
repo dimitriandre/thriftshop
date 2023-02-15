@@ -1,0 +1,17 @@
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.csproj.AssemblyReference.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.AssemblyInfoInputs.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.AssemblyInfo.cs
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.DataAccess.deps.json
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.DataAccess.runtimeconfig.json
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.DataAccess.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.DataAccess.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.Models.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.Models.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.csproj.CopyComplete
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\refint\Thriftshop.DataAccess.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.genruntimeconfig.cache
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\ref\Thriftshop.DataAccess.dll

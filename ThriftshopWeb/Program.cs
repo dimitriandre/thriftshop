@@ -1,5 +1,5 @@
-using ThriftshopWeb.Data;
 using Microsoft.EntityFrameworkCore;
+using ThriftshopWeb.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
