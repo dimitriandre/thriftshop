@@ -22,48 +22,29 @@ namespace ThriftshopWeb.Controllers
             return View(objProductList);
         }
 
-        //GET
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        //POST
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Thriftshop.Models.Product obj)
-        {
-                
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Product.Add(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Cover Type created successfully";
-                return RedirectToAction("Index");
-            }
-            return View(obj);
-        }
 
         //GET
-        public IActionResult Edit(int? id)
+        public IActionResult Upsert(int? id)
         {
+            Product product = new();
             if (id == null || id == 0)
             {
-                return NotFound();
+                //create product
+                return View(product);
             }
-            var coverTypeFromDb = _unitOfWork.Product.GetFirstOrDefault(u=>u.Id==id);
-
-            if (coverTypeFromDb == null)
+            else
             {
-                return NotFound();
+                //update product
+
             }
-            return View(coverTypeFromDb);
+
+            return View(product);
         }
 
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Thriftshop.Models.Product obj)
+        public IActionResult Upsert(Product obj)
         {
 
             if (ModelState.IsValid)
