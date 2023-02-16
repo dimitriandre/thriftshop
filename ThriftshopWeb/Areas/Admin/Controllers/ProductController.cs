@@ -3,6 +3,7 @@ using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
 using Thriftshop.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ThriftshopWeb.Controllers
 {
@@ -27,6 +28,20 @@ namespace ThriftshopWeb.Controllers
         public IActionResult Upsert(int? id)
         {
             Product product = new();
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(
+                u=> new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+
+            IEnumerable<SelectListItem> ItemConditionList = _unitOfWork.ItemCondition.GetAll().Select(
+                u=> new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+
             if (id == null || id == 0)
             {
                 //create product
