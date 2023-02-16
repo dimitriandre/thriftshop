@@ -2,14 +2,15 @@
 using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
+using Thriftshop.Models;
 
 namespace ThriftshopWeb.Controllers
 {
-    public class CategoryController : Controller
+    public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CoverTypeController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
 
@@ -17,8 +18,8 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _unitOfWork.Category.GetAll();
-            return View(objCategoryList);
+            IEnumerable<CoverType> objCoverTypeList = _unitOfWork.CoverType.GetAll();
+            return View(objCoverTypeList);
         }
 
         //GET
@@ -30,19 +31,14 @@ namespace ThriftshopWeb.Controllers
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
+        public IActionResult Create(CoverType obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("CustomError", "The DisplayOrder cannot exactly match the Name");
-            }
-
-
+                
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Add(obj);
+                _unitOfWork.CoverType.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category created successfully";
+                TempData["success"] = "Cover Type created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -55,29 +51,24 @@ namespace ThriftshopWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            var coverTypeFromDb = _unitOfWork.CoverType.GetFirstOrDefault(u=>u.Id==id);
 
-            if (categoryFromDb == null)
+            if (coverTypeFromDb == null)
             {
                 return NotFound();
             }
-            return View(categoryFromDb);
+            return View(coverTypeFromDb);
         }
 
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category obj)
+        public IActionResult Edit(CoverType obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("CustomError", "The DisplayOrder cannot exactly match the Name");
-            }
-
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(obj);
+                _unitOfWork.CoverType.Update(obj);
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
@@ -91,15 +82,16 @@ namespace ThriftshopWeb.Controllers
             {
                 return NotFound();
             }
-            //var categoryFromDb = _db.Categories.Find(id);
-            var categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
-            if (categoryFromDb == null)
+
+            var covertypeFromDb = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
+
+            if (covertypeFromDb == null)
             {
                 return NotFound();
             }
-            TempData["success"] = "Category updated successfully";
-            return View(categoryFromDb);
+            TempData["success"] = "Cover Type updated successfully";
+            return View(covertypeFromDb);
         }
 
         //POST
@@ -107,16 +99,16 @@ namespace ThriftshopWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            var obj = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
 
 
-            _unitOfWork.Category.Remove(obj);
+            _unitOfWork.CoverType.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Category deleted successfully";
+            TempData["success"] = "Cover Type deleted successfully";
             return RedirectToAction("Index");
         }
     }
