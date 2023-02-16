@@ -1,9 +1,9 @@
-﻿@model             Thriftshop.Models.ItemCondition
+﻿@model ItemCondition
 
 <form method="post" asp-action="Edit">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Edit CoverType</h2>
+            <h2 class="text-primary">Edit Item Condition</h2>
             <hr />
         </div>
         @*<div asp-validation-summary="All"></div>*@
@@ -14,7 +14,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
-        <a asp-controller="CoverType" asp-action="Index" class="btn btn-secondary" style="width:150px">
+        <a asp-controller="ItemCondition" asp-action="Index" class="btn btn-secondary" style="width:150px">
             Back to List
         </a>
     </div>

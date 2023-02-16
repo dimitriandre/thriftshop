@@ -8,7 +8,7 @@ public class ItemCondition
     [Key]
     public int Id { get; set; }
 
-    [Display(Name = "ItemCondition")]
+    [Display(Name = "Item Condition")]
     [Required]
     [MaxLength(50)]
     public string Name { get; set; }
