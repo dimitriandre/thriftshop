@@ -3,12 +3,12 @@ using System.ComponentModel;
 
 namespace Thriftshop.Models;
 
-public class CoverType
+public class ItemCondition
 {
     [Key]
     public int Id { get; set; }
 
-    [Display(Name = "Cover Type")]
+    [Display(Name = "ItemCondition")]
     [Required]
     [MaxLength(50)]
     public string Name { get; set; }

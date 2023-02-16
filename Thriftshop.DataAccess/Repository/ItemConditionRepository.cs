@@ -11,18 +11,18 @@ using ThriftshopWeb.Models;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
+    public class ItemConditionRepository : Repository<Models.ItemCondition>, IItemConditionRepository
     {
         private ApplicationDbContext _db;
 
-        public CoverTypeRepository(ApplicationDbContext db) : base(db)
+        public ItemConditionRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public void Update(CoverType obj)
+        public void Update(Models.ItemCondition obj)
         {
-            _db.CoverTypes.Update(obj);
+            _db.ItemConditions.Update(obj);
         }
     }
 }

@@ -6,11 +6,11 @@ using Thriftshop.Models;
 
 namespace ThriftshopWeb.Controllers
 {
-    public class CoverTypeController : Controller
+    public class ItemConditionController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public CoverTypeController(IUnitOfWork unitOfWork)
+        public ItemConditionController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
 
@@ -18,8 +18,8 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<CoverType> objCoverTypeList = _unitOfWork.CoverType.GetAll();
-            return View(objCoverTypeList);
+            IEnumerable<Thriftshop.Models.ItemCondition> objItemConditionList = _unitOfWork.ItemCondition.GetAll();
+            return View(objItemConditionList);
         }
 
         //GET
@@ -31,12 +31,12 @@ namespace ThriftshopWeb.Controllers
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(CoverType obj)
+        public IActionResult Create(Thriftshop.Models.ItemCondition obj)
         {
                 
             if (ModelState.IsValid)
             {
-                _unitOfWork.CoverType.Add(obj);
+                _unitOfWork.ItemCondition.Add(obj);
                 _unitOfWork.Save();
                 TempData["success"] = "Cover Type created successfully";
                 return RedirectToAction("Index");
@@ -51,7 +51,7 @@ namespace ThriftshopWeb.Controllers
             {
                 return NotFound();
             }
-            var coverTypeFromDb = _unitOfWork.CoverType.GetFirstOrDefault(u=>u.Id==id);
+            var coverTypeFromDb = _unitOfWork.ItemCondition.GetFirstOrDefault(u=>u.Id==id);
 
             if (coverTypeFromDb == null)
             {
@@ -63,12 +63,12 @@ namespace ThriftshopWeb.Controllers
         //POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(CoverType obj)
+        public IActionResult Edit(Thriftshop.Models.ItemCondition obj)
         {
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.CoverType.Update(obj);
+                _unitOfWork.ItemCondition.Update(obj);
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
@@ -84,7 +84,7 @@ namespace ThriftshopWeb.Controllers
             }
 
 
-            var covertypeFromDb = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
+            var covertypeFromDb = _unitOfWork.ItemCondition.GetFirstOrDefault(u => u.Id == id);
 
             if (covertypeFromDb == null)
             {
@@ -99,14 +99,14 @@ namespace ThriftshopWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
+            var obj = _unitOfWork.ItemCondition.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
 
 
-            _unitOfWork.CoverType.Remove(obj);
+            _unitOfWork.ItemCondition.Remove(obj);
             _unitOfWork.Save();
             TempData["success"] = "Cover Type deleted successfully";
             return RedirectToAction("Index");

@@ -25,7 +25,7 @@ namespace Thriftshop.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CoverTypes",
+                name: "ItemConditions",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,7 +34,7 @@ namespace Thriftshop.DataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CoverTypes", x => x.Id);
+                    table.PrimaryKey("PK_ItemConditions", x => x.Id);
                 });
         }
 
@@ -44,7 +44,7 @@ namespace Thriftshop.DataAccess.Migrations
                 name: "Categories");
 
             migrationBuilder.DropTable(
-                name: "CoverTypes");
+                name: "ItemConditions");
         }
     }
 }

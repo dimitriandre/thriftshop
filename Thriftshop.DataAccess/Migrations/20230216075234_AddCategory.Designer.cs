@@ -12,8 +12,8 @@ using Thriftshop.DataAccess;
 namespace Thriftshop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230215164900_AddCoverTypeToDb")]
-    partial class AddCoverTypeToDb
+    [Migration("20230216075234_AddCategory")]
+    partial class AddCategory
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace Thriftshop.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Thriftshop.Models.CoverType", b =>
+            modelBuilder.Entity("Thriftshop.Models.ItemCondition", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace Thriftshop.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CoverTypes");
+                    b.ToTable("ItemConditions");
                 });
 
             modelBuilder.Entity("ThriftshopWeb.Models.Category", b =>
