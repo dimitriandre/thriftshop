@@ -17,11 +17,14 @@ namespace Thriftshop.DataAccess.Repository.IRepository
             _db = db;
             Category = new CategoryRepository(_db);
             ItemCondition = new ItemConditionRepository(_db);
+            Product = new ProductRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
 
         public IItemConditionRepository ItemCondition { get; private set; }
+
+        public IProductRepository Product { get; private set; }
 
         public void Save()
         {
