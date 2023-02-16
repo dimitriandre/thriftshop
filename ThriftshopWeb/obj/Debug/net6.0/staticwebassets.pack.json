@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\e577e1c1-74d8-4ba5-95d6-89ea6a74d3e7.png",
+      "PackagePath": "staticwebassets\\images\\products\\e577e1c1-74d8-4ba5-95d6-89ea6a74d3e7.png"
+    },
+    {
       "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

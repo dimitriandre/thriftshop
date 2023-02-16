@@ -21,8 +21,7 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Thriftshop.Models.Product> objProductList = _unitOfWork.Product.GetAll();
-            return View(objProductList);
+            return View();
         }
 
 
@@ -128,6 +127,17 @@ namespace ThriftshopWeb.Controllers
             _unitOfWork.Save();
             TempData["success"] = "Cover Type deleted successfully";
             return RedirectToAction("Index");
+        } 
+        #region API_CALLS
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var productList = _unitOfWork.Product.GetAll();
+            return Json(new { data = productList });
+
         }
+        #endregion
     }
+
+
 }
