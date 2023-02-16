@@ -18,14 +18,17 @@
 </div>
 </br></br>
 
-<table class="table table-bordered table-striped" style="width:100%">
+<table id="tblData" class="table table-bordered table-striped" style="width:100%">
     <thead>
         <tr>
             <th>Name</th>
             <th>Price</th>
-            <th>Category</th>
-            <th>Gender</th>
-            <th></th>
+@*            <th>Category</th>
+*@            <th>Gender</th>
         </tr>
     </thead>
 </table>
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}
