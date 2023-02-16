@@ -50,6 +50,13 @@
             </select>
             <span asp-validation-for="CategoryId" class="text-danger"></span>
         </div>
+        <div class="mb-333">
+            <label asp-for="ItemConditionId"></label>
+            <select asp-for="ItemConditionId" asp-items="@(ViewData["ItemCondition"] as IEnumerable<SelectListItem>)" class="form-select">
+                <option disabled selected>--Select Item Condition--</option>
+            </select>
+            <span asp-validation-for="ItemConditionId" class="text-danger"></span>
+        </div>
 
         </br> </br>
 

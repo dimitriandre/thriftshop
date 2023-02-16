@@ -46,6 +46,7 @@ namespace ThriftshopWeb.Controllers
             {
                 //create product
                 ViewBag.CategoryList = CategoryList;
+                ViewData["ItemCondition"] = ItemConditionList;
                 return View(product);
             }
             else
