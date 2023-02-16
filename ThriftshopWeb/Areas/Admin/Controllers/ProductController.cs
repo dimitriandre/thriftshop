@@ -4,6 +4,7 @@ using Thriftshop.DataAccess;
 using ThriftshopWeb.Models;
 using Thriftshop.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Thriftshop.Models.ViewModels;
 
 namespace ThriftshopWeb.Controllers
 {
@@ -27,27 +28,29 @@ namespace ThriftshopWeb.Controllers
         //GET
         public IActionResult Upsert(int? id)
         {
-            Product product = new();
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(
-                u=> new SelectListItem
+            ProductVM productVM = new()
+            {
+                Product = new(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
                 {
-                    Text = u.Name,
-                    Value = u.Id.ToString()
-                });
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+                ItemConditionList = _unitOfWork.ItemCondition.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                })
+            };
 
-            IEnumerable<SelectListItem> ItemConditionList = _unitOfWork.ItemCondition.GetAll().Select(
-                u=> new SelectListItem
-                {
-                    Text = u.Name,
-                    Value = u.Id.ToString()
-                });
+
 
             if (id == null || id == 0)
             {
                 //create product
-                ViewBag.CategoryList = CategoryList;
-                ViewData["ItemCondition"] = ItemConditionList;
-                return View(product);
+                //ViewBag.CategoryList = CategoryList;
+                //ViewData["ItemCondition"] = ItemConditionList;
+                return View(productVM);
             }
             else
             {
@@ -55,7 +58,7 @@ namespace ThriftshopWeb.Controllers
 
             }
 
-            return View(product);
+            return View(productVM);
         }
 
         //POST
