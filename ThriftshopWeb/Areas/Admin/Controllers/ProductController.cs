@@ -85,8 +85,9 @@ namespace ThriftshopWeb.Controllers
                 }
 
 
-                //_unitOfWork.Product.Update(obj);
+                _unitOfWork.Product.Add(obj.Product);
                 _unitOfWork.Save();
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
