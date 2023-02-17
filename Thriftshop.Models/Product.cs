@@ -24,21 +24,26 @@ namespace Thriftshop.Models
         public double ListPrice { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name="Price for 1-10")]
         public double Price { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name="Price for 10-30")]
         public double Price10 { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name="Price for 30+")]
         public double Price30 { get; set; }
         [ValidateNever]
         public string ImageUrl { get; set; }
         [Required]
+        [Display(Name="Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
         [Required]
+        [Display(Name="Item Condition")]
         public int ItemConditionId { get; set; }
         [ValidateNever]
         public ItemCondition ItemCondition { get; set; }
