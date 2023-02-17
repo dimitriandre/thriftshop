@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Thriftshop.Models.ViewModels
+namespace Thriftshop.Models
 {
 	public class ShoppingCart
 	{

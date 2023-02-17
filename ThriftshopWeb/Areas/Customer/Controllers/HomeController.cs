@@ -29,7 +29,7 @@ namespace ThriftshopWeb.Controllers
             ShoppingCart cartObj = new()
             {
                 Count = 1,
-                Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Category, ItemCondition")
+                Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Category,ItemCondition")
             };
 
             return View(cartObj);
