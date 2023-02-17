@@ -132,7 +132,7 @@ namespace ThriftshopWeb.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var productList = _unitOfWork.Product.GetAll();
+            var productList = _unitOfWork.Product.GetAll(includeProperties:"Category,ItemCondition");
             return Json(new { data = productList });
 
         }

@@ -27,13 +27,13 @@ namespace Thriftshop.DataAccess.Repository
             dbSet.Add(entity);
         }
         
-        //includeProp - "Category, ItemCondition"
+        //includeProp - "Category,ItemCondition"
         public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
             if (includeProperties != null)
             { 
-                foreach(var includeProp in includeProperties.Split(new char[] {'.'}, StringSplitOptions.RemoveEmptyEntries))
+                foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
@@ -48,7 +48,7 @@ namespace Thriftshop.DataAccess.Repository
             query = query.Where(filter);
              if (includeProperties != null)
             { 
-                foreach(var includeProp in includeProperties.Split(new char[] {'.'}, StringSplitOptions.RemoveEmptyEntries))
+                foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
