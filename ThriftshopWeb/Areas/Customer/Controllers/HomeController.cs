@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.Models;
+using Thriftshop.Models.ViewModels;
 using ThriftshopWeb.Models;
 
 namespace ThriftshopWeb.Controllers
@@ -25,8 +26,13 @@ namespace ThriftshopWeb.Controllers
 
         public IActionResult Details(int id)
         {
-            Product product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Category, ItemCondition");
-            return View(product);
+            ShoppingCart cartObj = new()
+            {
+                Count = 1,
+                Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Category, ItemCondition")
+            };
+
+            return View(cartObj);
         }
 
         public IActionResult Privacy()
