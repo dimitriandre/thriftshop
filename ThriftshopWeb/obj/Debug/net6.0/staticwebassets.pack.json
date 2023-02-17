@@ -33,10 +33,6 @@
       "PackagePath": "staticwebassets\\images\\products\\a3cb21c7-c3cb-45b6-a0e0-24cd41b8b543.png"
     },
     {
-      "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\d8f30177-0793-4a6a-8814-0d78991a9605.png",
-      "PackagePath": "staticwebassets\\images\\products\\d8f30177-0793-4a6a-8814-0d78991a9605.png"
-    },
-    {
       "Id": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

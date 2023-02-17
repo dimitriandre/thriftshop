@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pRCKaC5CkHVTWOUr/pKdErcHOHIazeLKHjOmCjrLJ6s=",
+  "Hash": "Q7FB+tD275WbfCiRY12QX2oXHqKgtvE+NyhXyn5dUto=",
   "Source": "ThriftshopWeb",
   "BasePath": "_content/ThriftshopWeb",
   "Mode": "Default",
@@ -168,23 +168,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\a3cb21c7-c3cb-45b6-a0e0-24cd41b8b543.png"
-    },
-    {
-      "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\d8f30177-0793-4a6a-8814-0d78991a9605.png",
-      "SourceId": "ThriftshopWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\",
-      "BasePath": "_content/ThriftshopWeb",
-      "RelativePath": "images/products/d8f30177-0793-4a6a-8814-0d78991a9605.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\d8f30177-0793-4a6a-8814-0d78991a9605.png"
     },
     {
       "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\js\\site.js",
