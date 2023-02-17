@@ -110,42 +110,26 @@ namespace ThriftshopWeb.Controllers
             return View(obj);
         }
 
-        //GET
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+        ////GET
+        //public IActionResult Delete(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
 
 
-            var covertypeFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+        //    var covertypeFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
 
-            if (covertypeFromDb == null)
-            {
-                return NotFound();
-            }
-            TempData["success"] = "Cover Type updated successfully";
-            return View(covertypeFromDb);
-        }
+        //    if (covertypeFromDb == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    TempData["success"] = "Cover Type updated successfully";
+        //    return View(covertypeFromDb);
+        //}
 
-        //POST
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeletePOST(int? id)
-        {
-            var obj = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-
-
-            _unitOfWork.Product.Remove(obj);
-            _unitOfWork.Save();
-            TempData["success"] = "Cover Type deleted successfully";
-            return RedirectToAction("Index");
-        } 
+        
         #region API_CALLS
         [HttpGet]
         public IActionResult GetAll()
@@ -154,6 +138,29 @@ namespace ThriftshopWeb.Controllers
             return Json(new { data = productList });
 
         }
+
+        //POST
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var obj = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+
+            if (obj == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+           
+            var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+            if(System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Product.Remove(obj);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+        } 
+
         #endregion
     }
 
