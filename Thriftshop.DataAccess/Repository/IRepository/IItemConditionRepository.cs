@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Thriftshop.DataAccess.Repository.IRepository
 {
-    public interface ICoverTypeRepository : IRepository<CoverType>
-    {
-        void Update(CoverType obj);
-    }
+	public interface IItemConditionRepository : IRepository<ItemCondition>
+	{
+		public void Update(ItemCondition obj);
+	}
 }

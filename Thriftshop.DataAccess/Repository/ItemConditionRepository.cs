@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
+    public class ItemConditionRepository : Repository<CoverType>, IItemConditionRepository
     {
         private ApplicationDbContext _db;
 
-        public CoverTypeRepository(ApplicationDbContext db) : base(db)
+        public ItemConditionRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
 
-        public void Update(CoverType obj)
-        {
-            _db.CoverTypes.Update(obj);
-        }
-    }
+		public void Update(Models.ItemCondition obj)
+		{
+			_db.ItemConditions.Update(obj);
+		}
+	}
 }
