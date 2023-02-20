@@ -14,6 +14,6 @@ namespace Thriftshop.Models.ViewModels
         [ValidateNever]
         public IEnumerable<SelectListItem> CategoryList { get; set; }
         [ValidateNever]
-        public IEnumerable<SelectListItem> CoverTypeList { get; set; }
+        public IEnumerable<SelectListItem> ItemConditionList { get; set; }
     }
 }

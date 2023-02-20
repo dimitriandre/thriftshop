@@ -18,7 +18,7 @@ public class CoverTypeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<CoverType> objCoverTypeList = _unitOfWork.CoverType.GetAll();
+        IEnumerable<ItemCondition> objCoverTypeList = _unitOfWork.CoverType.GetAll();
         return View(objCoverTypeList);
     }
 
@@ -31,7 +31,7 @@ public class CoverTypeController : Controller
     //POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Create(CoverType obj)
+    public IActionResult Create(ItemCondition obj)
     {
         if (ModelState.IsValid)
         {
@@ -63,7 +63,7 @@ public class CoverTypeController : Controller
     //POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Edit(CoverType obj)
+    public IActionResult Edit(ItemCondition obj)
     {
        
         if (ModelState.IsValid)
