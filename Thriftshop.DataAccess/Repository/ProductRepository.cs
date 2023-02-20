@@ -1,12 +1,12 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
+﻿using Thriftshop.DataAccess.Repository.IRepository;
+using Thriftshop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.DataAccess.Repository
+namespace Thriftshop.DataAccess.Repository
 {
     public class ProductRepository : Repository<Product>, IProductRepository
     {

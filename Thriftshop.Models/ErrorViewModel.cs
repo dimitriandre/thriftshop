@@ -1,5 +1,5 @@
 
-namespace BulkyBook.Models;
+namespace Thriftshop.Models;
 public class ErrorViewModel
 {
     public string? RequestId { get; set; }

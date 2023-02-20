@@ -1,11 +1,11 @@
-﻿using BulkyBook.DataAccess;
-using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
+﻿using Thriftshop.DataAccess;
+using Thriftshop.DataAccess.Repository.IRepository;
+using Thriftshop.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BulkyBookWeb.Controllers;
+namespace ThriftshopWeb.Controllers;
 [Area("Admin")]
 public class CategoryController : Controller
 {

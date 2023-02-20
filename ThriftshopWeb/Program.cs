@@ -1,7 +1,7 @@
 
-using BulkyBook.DataAccess;
-using BulkyBook.DataAccess.Repository;
-using BulkyBook.DataAccess.Repository.IRepository;
+using Thriftshop.DataAccess;
+using Thriftshop.DataAccess.Repository;
+using Thriftshop.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

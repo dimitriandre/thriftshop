@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace BulkyBookWeb.Areas.Identity.Pages.Account
+namespace ThriftshopWeb.Areas.Identity.Pages.Account
 {
     public class LoginWith2faModel : PageModel
     {

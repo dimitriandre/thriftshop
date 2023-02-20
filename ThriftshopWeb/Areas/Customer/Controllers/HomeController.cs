@@ -1,12 +1,12 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
+﻿using Thriftshop.DataAccess.Repository.IRepository;
+using Thriftshop.Models;
+using Thriftshop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace BulkyBookWeb.Controllers;
+namespace ThriftshopWeb.Controllers;
 [Area("Customer")]
 public class HomeController : Controller
 {

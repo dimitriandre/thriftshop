@@ -1,7 +1,7 @@
-﻿using BulkyBook.DataAccess;
-using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
+﻿using Thriftshop.DataAccess;
+using Thriftshop.DataAccess.Repository.IRepository;
+using Thriftshop.Models;
+using Thriftshop.Models.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace BulkyBookWeb.Controllers;
+namespace ThriftshopWeb.Controllers;
 [Area("Admin")]
 public class ProductController : Controller
 {

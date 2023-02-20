@@ -1,11 +1,11 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
+﻿using Thriftshop.DataAccess.Repository.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.DataAccess.Repository
+namespace Thriftshop.DataAccess.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

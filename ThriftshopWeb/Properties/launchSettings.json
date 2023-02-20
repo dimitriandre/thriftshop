@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "BulkyBookWeb": {
+    "ThriftshopWeb": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

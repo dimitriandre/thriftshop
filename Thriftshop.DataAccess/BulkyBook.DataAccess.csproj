@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BulkyBook.Models\BulkyBook.Models.csproj" />
+    <ProjectReference Include="..\Thriftshop.Models\Thriftshop.Models.csproj" />
   </ItemGroup>
 
 </Project>
