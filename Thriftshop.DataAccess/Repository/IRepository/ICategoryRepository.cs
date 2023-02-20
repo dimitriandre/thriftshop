@@ -1,14 +1,14 @@
-﻿using System;
+﻿using BulkyBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThriftshopWeb.Models;
 
-namespace Thriftshop.DataAccess.Repository.IRepository
+namespace BulkyBook.DataAccess.Repository.IRepository
 {
     public interface ICategoryRepository : IRepository<Category>
     {
-        public void Update(Category obj);
+        void Update(Category obj);
     }
 }

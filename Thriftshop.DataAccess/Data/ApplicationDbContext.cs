@@ -1,19 +1,16 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿
+using BulkyBook.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Thriftshop.Models;
-using ThriftshopWeb.Models;
 
-namespace Thriftshop.DataAccess
+namespace BulkyBook.DataAccess;
+public class ApplicationDbContext :IdentityDbContext
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-
-        }
-
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<ItemCondition> ItemConditions { get; set; }
-        public DbSet<Product> Products { get; set; }
     }
+
+    public DbSet<Category> Categories {  get; set; }
+    public DbSet<CoverType> CoverTypes { get; set; }
+    public DbSet<Product> Products { get; set; }
 }

@@ -1,14 +1,12 @@
-﻿using System;
+﻿using BulkyBook.DataAccess.Repository.IRepository;
+using BulkyBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Thriftshop.DataAccess.Repository.IRepository;
-using Thriftshop.DataAccess;
-using ThriftshopWeb.Models;
 
-namespace Thriftshop.DataAccess.Repository
+namespace BulkyBook.DataAccess.Repository
 {
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
@@ -18,6 +16,7 @@ namespace Thriftshop.DataAccess.Repository
         {
             _db = db;
         }
+
 
         public void Update(Category obj)
         {

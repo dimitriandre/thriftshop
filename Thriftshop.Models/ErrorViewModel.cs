@@ -1,9 +1,8 @@
-namespace ThriftshopWeb.Models
-{
-    public class ErrorViewModel
-    {
-        public string? RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+namespace BulkyBook.Models;
+public class ErrorViewModel
+{
+    public string? RequestId { get; set; }
+
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }

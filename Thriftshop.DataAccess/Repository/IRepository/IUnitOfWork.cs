@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Thriftshop.DataAccess.Repository.IRepository
+namespace BulkyBook.DataAccess.Repository.IRepository
 {
     public interface IUnitOfWork
     {
-        ICategoryRepository Category { get; }
-        IItemConditionRepository ItemCondition { get; }
+        ICategoryRepository Category {  get; }
+        ICoverTypeRepository CoverType {  get; }
         IProductRepository Product { get; }
 
         void Save();

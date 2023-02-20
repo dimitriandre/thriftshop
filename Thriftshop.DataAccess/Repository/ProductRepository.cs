@@ -1,17 +1,12 @@
-﻿using System;
+﻿using BulkyBook.DataAccess.Repository.IRepository;
+using BulkyBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Thriftshop.DataAccess.Repository.IRepository;
-using Thriftshop.Models;
-using Thriftshop.DataAccess;
-using ThriftshopWeb.Models;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
-namespace Thriftshop.DataAccess.Repository
+namespace BulkyBook.DataAccess.Repository
 {
     public class ProductRepository : Repository<Product>, IProductRepository
     {
@@ -22,24 +17,25 @@ namespace Thriftshop.DataAccess.Repository
             _db = db;
         }
 
+
         public void Update(Product obj)
         {
-            var objFromDb = _db.Products.FirstOrDefault(u=>u.Id == obj.Id);
+            var objFromDb = _db.Products.FirstOrDefault(u => u.Id == obj.Id);
             if (objFromDb != null)
             {
-                objFromDb.Name = obj.Name;
-                objFromDb.Id = obj.Id;
-                objFromDb.Description = obj.Description;
-                objFromDb.Gender = obj.Gender;
-                objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.Title = obj.Title;
+                objFromDb.ISBN = obj.ISBN;
                 objFromDb.Price = obj.Price;
-                objFromDb.Price10 = obj.Price10;
-                objFromDb.Price30 = obj.Price30;
+                objFromDb.Price50 = obj.Price50;
+                objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.Price100 = obj.Price100;
+                objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
-                objFromDb.ItemConditionId = obj.ItemConditionId;
+                objFromDb.Author = obj.Author;
+                objFromDb.CoverTypeId = obj.CoverTypeId;
                 if (obj.ImageUrl != null)
                 {
-                    objFromDb.ImageUrl = obj.ImageUrl;
+                    objFromDb.ImageUrl = obj.ImageUrl;  
                 }
             }
         }
