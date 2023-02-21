@@ -12,7 +12,7 @@ using Thriftshop.DataAccess;
 namespace Thriftshop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230221085944_addCompanyToDb")]
+    [Migration("20230221093858_addCompanyToDb")]
     partial class addCompanyToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
