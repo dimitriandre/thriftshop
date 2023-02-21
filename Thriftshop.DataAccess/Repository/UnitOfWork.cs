@@ -21,6 +21,8 @@ namespace Thriftshop.DataAccess.Repository
         public ICategoryRepository Category { get; private set; }
         public IItemConditionRepository ItemCondition {  get; private set; }
         public IProductRepository Product { get; private set; }
+        public ICompanyRepository Company { get; private set; }
+
         public void Save()
         {
             _db.SaveChanges();
