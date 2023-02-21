@@ -16,13 +16,11 @@ namespace ThriftshopWeb.Controllers;
 public class CompanyController : Controller
 {
     private readonly IUnitOfWork _unitOfWork;
-    private readonly IWebHostEnvironment _hostEnvironment;
 
 
-    public CompanyController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
+    public CompanyController(IUnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
-        _hostEnvironment = hostEnvironment;
     }
 
     public IActionResult Index()
@@ -41,8 +39,8 @@ public class CompanyController : Controller
         }
         else
         {
-            var companyObj = _unitOfWork.Company.GetFirstOrDefault(u => u.Id == id);
-            return View(companyObj);
+            company = _unitOfWork.Company.GetFirstOrDefault(u => u.Id == id);
+            return View(company);
         }
     }
 
@@ -57,13 +55,14 @@ public class CompanyController : Controller
             if (obj.Id == 0)
             {
                 _unitOfWork.Company.Add(obj);
+                TempData["success"] = "Company created successfully";
             }
             else
             {
                 _unitOfWork.Company.Update(obj);
+                TempData["success"] = "Company updated successfully";
             }
             _unitOfWork.Save();
-            TempData["success"] = "Company created successfully";
             return RedirectToAction("Index");
         }
         return View(obj);
@@ -75,8 +74,8 @@ public class CompanyController : Controller
     [HttpGet]
     public IActionResult GetAll()
     {
-        var CompanyList = _unitOfWork.Company.GetAll();
-        return Json(new { data = CompanyList });
+        var companyList = _unitOfWork.Company.GetAll();
+        return Json(new { data = companyList });
     }
 
     //POST
