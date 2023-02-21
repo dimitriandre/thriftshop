@@ -21,7 +21,6 @@ C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\sta
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\scopedcss\bundle\ThriftshopWeb.styles.css
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\obj\Debug\net6.0\scopedcss\projectbundle\ThriftshopWeb.bundle.scp.css
