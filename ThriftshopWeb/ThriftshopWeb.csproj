@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Thriftshop.DataAccess\Thriftshop.DataAccess.csproj" />
+    <ProjectReference Include="..\Thriftshop.Utility\Thriftshop.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -41,6 +41,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.9",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.12",
           "Thriftshop.DataAccess": "1.0.0",
+          "Thriftshop.Utility": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -3155,6 +3156,17 @@
         },
         "compile": {
           "Thriftshop.Models.dll": {}
+        }
+      },
+      "Thriftshop.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.9"
+        },
+        "runtime": {
+          "Thriftshop.Utility.dll": {}
+        },
+        "compile": {
+          "Thriftshop.Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery.Reference/6.0.0.0": {
@@ -6418,6 +6430,11 @@
       "sha512": ""
     },
     "Thriftshop.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Thriftshop.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

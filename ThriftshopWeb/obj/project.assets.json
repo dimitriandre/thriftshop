@@ -4354,6 +4354,19 @@
         "runtime": {
           "bin/placeholder/Thriftshop.Models.dll": {}
         }
+      },
+      "Thriftshop.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.9"
+        },
+        "compile": {
+          "bin/placeholder/Thriftshop.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Thriftshop.Utility.dll": {}
+        }
       }
     }
   },
@@ -11693,6 +11706,11 @@
       "type": "project",
       "path": "../Thriftshop.Models/Thriftshop.Models.csproj",
       "msbuildProject": "../Thriftshop.Models/Thriftshop.Models.csproj"
+    },
+    "Thriftshop.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Thriftshop.Utility/Thriftshop.Utility.csproj",
+      "msbuildProject": "../Thriftshop.Utility/Thriftshop.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11703,7 +11721,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.12",
-      "Thriftshop.DataAccess >= 1.0.0"
+      "Thriftshop.DataAccess >= 1.0.0",
+      "Thriftshop.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11741,6 +11760,9 @@
           "projectReferences": {
             "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.DataAccess\\Thriftshop.DataAccess.csproj": {
               "projectPath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.DataAccess\\Thriftshop.DataAccess.csproj"
+            },
+            "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Utility\\Thriftshop.Utility.csproj": {
+              "projectPath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Utility\\Thriftshop.Utility.csproj"
             }
           }
         }
