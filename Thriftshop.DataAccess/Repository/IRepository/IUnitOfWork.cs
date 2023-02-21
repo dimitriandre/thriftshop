@@ -9,7 +9,7 @@ namespace Thriftshop.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         ICategoryRepository Category {  get; }
-        IItemConditionRepository CoverType {  get; }
+        IItemConditionRepository ItemCondition {  get; }
         IProductRepository Product { get; }
 
         void Save();

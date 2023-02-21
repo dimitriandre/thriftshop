@@ -23,16 +23,16 @@ namespace Thriftshop.DataAccess.Repository
             var objFromDb = _db.Products.FirstOrDefault(u => u.Id == obj.Id);
             if (objFromDb != null)
             {
-                objFromDb.Title = obj.Title;
-                objFromDb.ISBN = obj.ISBN;
-                objFromDb.Price = obj.Price;
-                objFromDb.Price50 = obj.Price50;
-                objFromDb.ListPrice = obj.ListPrice;
-                objFromDb.Price100 = obj.Price100;
+                objFromDb.Name = obj.Name;
+                objFromDb.Id = obj.Id;
                 objFromDb.Description = obj.Description;
+                objFromDb.Gender = obj.Gender;
+                objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.Price = obj.Price;
+                objFromDb.Price10 = obj.Price10;
+                objFromDb.Price30 = obj.Price30;
                 objFromDb.CategoryId = obj.CategoryId;
-                objFromDb.Author = obj.Author;
-                objFromDb.CoverTypeId = obj.CoverTypeId;
+                objFromDb.ItemConditionId = obj.ItemConditionId;
                 if (obj.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = obj.ImageUrl;  

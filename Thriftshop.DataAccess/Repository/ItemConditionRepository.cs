@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    public class ItemConditionRepository : Repository<CoverType>, IItemConditionRepository
+    public class ItemConditionRepository : Repository<ItemCondition>, IItemConditionRepository
     {
         private ApplicationDbContext _db;
 

@@ -17,14 +17,14 @@ namespace Thriftshop.DataAccess.Repository
         public Repository(ApplicationDbContext db)
         {
             _db= db;
-            //_db.Products.Include(u => u.Category).Include(u=>u.CoverType);
+            //_db.Products.Include(u => u.Category).Include(u=>u.ItemCondition);
             this.dbSet= _db.Set<T>();
         }
         public void Add(T entity)
         {
             dbSet.Add(entity);
         }
-        //includeProp - "Category,CoverType"
+        //includeProp - "Category,ItemCondition"
         public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
