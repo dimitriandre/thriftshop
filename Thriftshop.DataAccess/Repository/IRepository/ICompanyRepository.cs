@@ -8,31 +8,8 @@ using Thriftshop.Models;
 
 namespace Thriftshop.DataAccess.Repository.IRepository
 {
-    public class ICompanyRepository : IRepository<Company>
+    public interface ICompanyRepository : IRepository<Company>
     {
-        public void Add(Company entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Company> GetAll(string? includeProperties = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Company GetFirstOrDefault(Expression<Func<Company, bool>> filter, string? includeProperties = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(Company entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveRange(IEnumerable<Company> entity)
-        {
-            throw new NotImplementedException();
-        }
+        public void Update(Company obj);
     }
 }

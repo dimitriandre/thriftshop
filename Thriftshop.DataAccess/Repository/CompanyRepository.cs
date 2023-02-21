@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Thriftshop.DataAccess.Repository
 {
-    public class CompanyRepository : Repository<Company>
+    public class CompanyRepository : Repository<Company>, ICompanyRepository
     {
         private ApplicationDbContext _db;
 

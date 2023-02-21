@@ -17,6 +17,7 @@ namespace Thriftshop.DataAccess.Repository
             Category = new CategoryRepository(_db);
             ItemCondition = new ItemConditionRepository(_db);
             Product = new ProductRepository(_db);
+            Company = new CompanyRepository(_db);
         }
         public ICategoryRepository Category { get; private set; }
         public IItemConditionRepository ItemCondition {  get; private set; }

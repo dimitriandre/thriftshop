@@ -12,7 +12,6 @@ namespace Thriftshop.DataAccess.Repository.IRepository
         IItemConditionRepository ItemCondition {  get; }
         IProductRepository Product { get; }
 
-        ICompanyRepository Company { get; }
 
         void Save();
     }
