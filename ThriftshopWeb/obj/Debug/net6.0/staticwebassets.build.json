@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I7KfxU10mdjYgBeYuQz4OrZPrcAZNxGwL8kQZupNeFA=",
+  "Hash": "y08EPKn9mFJafntKAMeXE4cavl3l4p60pNskiXktci8=",
   "Source": "ThriftshopWeb",
   "BasePath": "_content/ThriftshopWeb",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\05899c7f-8230-41db-a4c2-bcf5bae47853.jpg",
+      "SourceId": "ThriftshopWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\",
+      "BasePath": "_content/ThriftshopWeb",
+      "RelativePath": "images/products/05899c7f-8230-41db-a4c2-bcf5bae47853.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\05899c7f-8230-41db-a4c2-bcf5bae47853.jpg"
     },
     {
       "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\2d913257-51ef-42d3-b7dc-1e54a5265791.jpg",
