@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y08EPKn9mFJafntKAMeXE4cavl3l4p60pNskiXktci8=",
+  "Hash": "XknPoN1xG18LI2R/cgxX+Q96MXUrC7xTRImEB7iMuvY=",
   "Source": "ThriftshopWeb",
   "BasePath": "_content/ThriftshopWeb",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\lawn_leaf.jpg",
+      "SourceId": "ThriftshopWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\",
+      "BasePath": "_content/ThriftshopWeb",
+      "RelativePath": "images/lawn_leaf.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lawn_leaf.jpg"
     },
     {
       "Identity": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\wwwroot\\images\\products\\05899c7f-8230-41db-a4c2-bcf5bae47853.jpg",
