@@ -50,5 +50,13 @@ namespace ThriftshopWeb.Areas.Customer.Controllers
                 return price30;
             }
         }
+
+        public IActionResult Plus(int cartId)
+        {
+            var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId);
+            _unitOfWork.ShoppingCart.IncrementCount(cart, 1);
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
