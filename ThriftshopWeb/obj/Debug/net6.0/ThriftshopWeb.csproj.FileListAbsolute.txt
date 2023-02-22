@@ -575,3 +575,4 @@ C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Mic
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Thriftshop.Utility.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Thriftshop.Utility.pdb
+C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Stripe.net.dll

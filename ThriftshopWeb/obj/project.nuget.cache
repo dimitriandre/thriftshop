@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X3Wn4NCxbYgFH0/FEX8zszC+rC6zzqcvTt+7O7bzKVJZ/Jdn20vF0tdqpssRTAg6BY/5nGQ27rEyEnEekQXUvw==",
+  "dgSpecHash": "GtdlRJ5LhmCT5Sq2BTXdg4rjCWPlkQphP7ZMWnJE4WaXr1vV5jgssKNEgaYTcC82HXTv8hBiLYsLgGSWssebTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\ThriftshopWeb.csproj",
   "expectedPackageFiles": [
@@ -138,6 +138,7 @@
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\stripe.net\\41.7.0\\stripe.net.41.7.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

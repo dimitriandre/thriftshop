@@ -1,10 +1,12 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Stripe.Checkout;
 using Thriftshop.DataAccess.Repository.IRepository;
 using Thriftshop.Models;
 using Thriftshop.Models.ViewModels;
 using Thriftshop.Utility;
+using static System.Net.WebRequestMethods;
 
 namespace ThriftshopWeb.Areas.Customer.Controllers
 {
@@ -107,7 +109,46 @@ namespace ThriftshopWeb.Areas.Customer.Controllers
                 _unitOfWork.Save();
             }
 
-            _unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
+            //stripe settings
+            var domain = "https://localhost:44300/";
+			var options = new SessionCreateOptions
+			{
+                PaymentMethodTypes = new List<string>
+                {
+                    "card"
+                },
+				LineItems = new List<SessionLineItemOptions>()
+		        ,
+				Mode = "payment",
+				SuccessUrl = domain+$"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}",
+				CancelUrl = domain+"customer/cart/index",
+			};
+
+            foreach(var item in ShoppingCartVM.ListCart)
+			{
+                var sessionLineItem = new SessionLineItemOptions
+                {
+                    PriceData = new SessionLineItemPriceDataOptions
+                    {
+                        UnitAmount = (long)(item.Price * 100),
+                        Currency = "usd",
+                        ProductData = new SessionLineItemPriceDataProductDataOptions
+                        {
+                            Name = item.Product.Name,
+                        },
+                    },
+                    Quantity = item.Count,
+                };
+                options.LineItems.Add(sessionLineItem);
+		    }
+
+			var service = new SessionService();
+			Session session = service.Create(options);
+
+			Response.Headers.Add("Location", session.Url);
+			return new StatusCodeResult(303);
+
+			_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
             _unitOfWork.Save();
 			return RedirectToAction("Index", "Home");
 		}
