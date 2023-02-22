@@ -35,7 +35,24 @@ namespace ThriftshopWeb.Areas.Customer.Controllers
             return View(ShoppingCartVM);
         }
 
-        private double GetPriceBasedOnQuantity(double quantity, double price, double price10, double price30)
+		public IActionResult Summary()
+		{
+			//var claimsIdentity = (ClaimsIdentity)User.Identity;
+			//var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+			//ShoppingCartVM = new ShoppingCartVM()
+			//{
+			//	ListCart = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value,
+			//	includeProperties: "Product")
+			//};
+			//foreach (var cart in ShoppingCartVM.ListCart)
+			//{
+			//	cart.Price = GetPriceBasedOnQuantity(cart.Count, cart.Product.Price, cart.Product.Price10, cart.Product.Price30);
+			//	ShoppingCartVM.CartTotal += (cart.Price * cart.Count);
+			//}
+			return View(ShoppingCartVM);
+		}
+		private double GetPriceBasedOnQuantity(double quantity, double price, double price10, double price30)
         {
             if (quantity <= 10)
             {
