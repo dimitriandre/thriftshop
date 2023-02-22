@@ -144,14 +144,23 @@ namespace ThriftshopWeb.Areas.Customer.Controllers
 
 			var service = new SessionService();
 			Session session = service.Create(options);
-
+            _unitOfWork.OrderHeader.UpdateStripePaymentID(ShoppingCartVM.OrderHeader.Id, session.Id, session.PaymentIntentId);
+            _unitOfWork.Save();
 			Response.Headers.Add("Location", session.Url);
 			return new StatusCodeResult(303);
 
-			_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
-            _unitOfWork.Save();
-			return RedirectToAction("Index", "Home");
+			//_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
+            //_unitOfWork.Save();
+			//return RedirectToAction("Index", "Home");
 		}
+        
+        public IActionResult OrderConfirmation(int id)
+        {
+            OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id);
+
+		    //check the stripe status
+
+        }
 
 		private double GetPriceBasedOnQuantity(double quantity, double price, double price10, double price30)
         {
