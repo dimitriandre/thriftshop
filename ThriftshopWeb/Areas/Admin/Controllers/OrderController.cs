@@ -14,6 +14,8 @@ namespace ThriftshopWeb.Areas.Admin.Controllers
 	public class OrderController : Controller
 	{
 		private readonly IUnitOfWork _unitOfWork;
+		[BindProperty]
+		public OrderVM OrderVM { get; set; }
 		public OrderController(IUnitOfWork unitOfWork)
 		{
 			_unitOfWork= unitOfWork;
@@ -22,9 +24,21 @@ namespace ThriftshopWeb.Areas.Admin.Controllers
 		{
 			return View();
 		}
+        public IActionResult Details(int orderId)
+        {
+			OrderVM = new OrderVM()
+			{
+				OrderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == orderId, includeProperties: "ApplicationUser"),
+                OrderDetail = _unitOfWork.OrderDetail.GetAll(u => u.Id == orderId, includeProperties: "Product")
+            };
 
-		#region API CALLS
-		[HttpGet]
+            return View(OrderVM);
+        }
+
+
+
+        #region API CALLS
+        [HttpGet]
 		public IActionResult GetAll(string status)
 		{
 			IEnumerable<OrderHeader> orderHeaders;
