@@ -133,8 +133,7 @@ namespace ThriftshopWeb.Areas.Customer.Controllers
                     {
                         "card"
                     },
-                    LineItems = new List<SessionLineItemOptions>()
-                    ,
+                    LineItems = new List<SessionLineItemOptions>(),
                     Mode = "payment",
                     SuccessUrl = domain + $"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}",
                     CancelUrl = domain + "customer/cart/index",
