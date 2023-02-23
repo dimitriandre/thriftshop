@@ -7,9 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Order\Index.cshtml" />
     <Content Remove="Areas\Admin\Views\Company\Index.cshtml" />
     <Content Remove="Areas\Admin\Views\Company\Upsert.cshtml" />
     <Content Remove="wwwroot\js\company.js" />
+    <Content Remove="wwwroot\js\order.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\Order\Index.cshtml" />
     <None Include="Areas\Admin\Views\Category\Create.cshtml" />
     <None Include="Areas\Admin\Views\Category\Delete.cshtml" />
     <None Include="Areas\Admin\Views\Category\Edit.cshtml" />
@@ -102,6 +105,7 @@
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\js\company.js" />
+    <None Include="wwwroot\js\order.js" />
     <None Include="wwwroot\js\product.js" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />

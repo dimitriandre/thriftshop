@@ -4,7 +4,8 @@ using Thriftshop.Models;
 
 namespace ThriftshopWeb.Areas.Admin.Controllers
 {
-	public class OrderController
+	[Area("Admin")]
+	public class OrderController : Controller
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		public OrderController(IUnitOfWork unitOfWork)
