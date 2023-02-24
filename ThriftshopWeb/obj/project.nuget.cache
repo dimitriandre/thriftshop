@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ILqisoiOFZX4n0gJWBZNv4dkWTpW4o/2HLDurSG/NfUPX4iIVMWgxDqBekfnI8m1+DPfe/hXehY9n0CS8CYumw==",
+  "dgSpecHash": "k1Rgv+iZLwHMDG6U6fP5MEB2cO6dU15RvuW6G0ktFCPSX+A5IgDouEXDYdhab6ggVJ8g95i65cNaVH+POfHysg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\ThriftshopWeb.csproj",
   "expectedPackageFiles": [
@@ -141,6 +141,8 @@
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\stripe.net\\41.7.0\\stripe.net.41.7.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

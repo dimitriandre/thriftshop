@@ -579,3 +579,5 @@ C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Str
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\MailKit.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\MimeKit.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\SendGrid.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\StarkbankEcdsa.dll
