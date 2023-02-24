@@ -30,6 +30,8 @@ namespace Thriftshop.DataAccess.Repository
             {
                 orderFromDb.PaymentStatus = paymentStatus;
             }
+            orderFromDb.OrderStatus = orderStatus;
+      
 		}
 
 		public void UpdateStripePaymentID(int id, string sessionId, string paymentIntentId)

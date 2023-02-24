@@ -2,6 +2,7 @@
 @using Thriftshop.Utility
 
 <form method="post">
+	<input asp-for="OrderHeader.Id" hidden />
 	<br />
 	<div class="container">
 		<div class="card">
@@ -188,7 +189,7 @@
 									<input asp-for="OrderHeader.PaymentStatus" type="text" readonly class="form-control" />
 								</div>
 							</div>
-							<input type="submit" class="btn btn-warning form-control my-1" value="Update Order Details" />
+							<input type="submit" asp-action="UpdateOrderDetail" class="btn btn-warning form-control my-1" value="Update Order Details" />
 
 
 						</div>
@@ -231,11 +232,11 @@
 							{
 								@if(Model.OrderHeader.OrderStatus==SD.StatusApproved)
 								{
-									<input type="submit" class="btn btn-primary form-control my-1" value="Start Processing" />
+									<input type="submit" asp-action="StartProcessing" class="btn btn-primary form-control my-1" value="Start Processing" />
 								}
 								@if (Model.OrderHeader.OrderStatus == SD.StatusInProcess)
 								{
-									<input type="submit" class="btn btn-primary form-control my-1" value="Ship Order" />
+									<input type="submit" onclick="return validateInput()" asp-action="ShipOrder" class="btn btn-primary form-control my-1" value="Ship Order" />
 								}
 								@if (Model.OrderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment && Model.OrderHeader.OrderStatus==SD.StatusShipped)
 								{
@@ -256,4 +257,28 @@
 	</div>
 </form>
 
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+<script>
+		function validateInput() {
+			if (document.getElementById("trackingNumber").value == "") {
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Please enter tracking number!',
+				});
+				return false;
+			}
+			if (document.getElementById("carrier").value == "") {
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Please enter tracking number!',
+				});
+				return false;
+			}
+			return true;
+		}
+</script>
+}
 
