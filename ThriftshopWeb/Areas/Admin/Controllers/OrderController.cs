@@ -72,7 +72,7 @@ namespace ThriftshopWeb.Areas.Admin.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult StartShipping()
+		public IActionResult ShipOrder()
 		{
 			var orderHeaderFromDb = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderVM.OrderHeader.Id, tracked: false);
 			orderHeaderFromDb.TrackingNumber = OrderVM.OrderHeader.TrackingNumber;
@@ -82,7 +82,7 @@ namespace ThriftshopWeb.Areas.Admin.Controllers
 			_unitOfWork.OrderHeader.UpdateStatus(OrderVM.OrderHeader.Id, SD.StatusShipped);
 			_unitOfWork.Save();
 			TempData["Success"] = "Order Shipped Successfully";
-			return RedirectToAction("Details", "Order", new { OrderVM.OrderHeader.Id });
+			return RedirectToAction("Details", "Order", new { orderId = OrderVM.OrderHeader.Id });
 		}
 
 
