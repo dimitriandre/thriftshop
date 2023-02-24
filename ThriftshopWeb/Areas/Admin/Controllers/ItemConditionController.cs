@@ -4,9 +4,12 @@ using Thriftshop.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using Thriftshop.Utility;
 
 namespace ThriftshopWeb.Controllers;
 [Area("Admin")]
+[Authorize(Roles = SD.Role_Admin)]
 public class ItemConditionController : Controller
 {
 			private readonly IUnitOfWork _unitOfWork;

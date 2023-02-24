@@ -10,9 +10,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using Thriftshop.Utility;
 
 namespace ThriftshopWeb.Controllers;
 [Area("Admin")]
+[Authorize(Roles = SD.Role_Admin)]
 public class ProductController : Controller
 {
     private readonly IUnitOfWork _unitOfWork;
