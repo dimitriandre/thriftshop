@@ -15,3 +15,5 @@ C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\ne
 C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.pdb
 C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\Thriftshop.DataAccess.genruntimeconfig.cache
 C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\obj\Debug\net6.0\ref\Thriftshop.DataAccess.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.Utility.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\Thriftshop.DataAccess\bin\Debug\net6.0\Thriftshop.Utility.pdb

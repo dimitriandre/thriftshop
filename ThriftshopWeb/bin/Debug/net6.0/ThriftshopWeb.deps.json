@@ -3232,7 +3232,8 @@
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
-          "Thriftshop.Models": "1.0.0"
+          "Thriftshop.Models": "1.0.0",
+          "Thriftshop.Utility": "1.0.0"
         },
         "runtime": {
           "Thriftshop.DataAccess.dll": {}

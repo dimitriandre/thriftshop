@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Models\\Thriftshop.Models.csproj": {
                 "projectPath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Models\\Thriftshop.Models.csproj"
+              },
+              "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Utility\\Thriftshop.Utility.csproj": {
+                "projectPath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\Thriftshop.Utility\\Thriftshop.Utility.csproj"
               }
             }
           }

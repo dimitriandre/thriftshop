@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Thriftshop.Models\Thriftshop.Models.csproj" />
+    <ProjectReference Include="..\Thriftshop.Utility\Thriftshop.Utility.csproj" />
   </ItemGroup>
 
 </Project>
