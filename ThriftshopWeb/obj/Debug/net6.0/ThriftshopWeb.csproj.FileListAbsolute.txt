@@ -581,3 +581,4 @@ C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Mim
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\SendGrid.dll
 C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\DimitriAndre\source\repos\Thriftshop\ThriftshopWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll

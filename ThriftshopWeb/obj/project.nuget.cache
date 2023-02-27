@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k1Rgv+iZLwHMDG6U6fP5MEB2cO6dU15RvuW6G0ktFCPSX+A5IgDouEXDYdhab6ggVJ8g95i65cNaVH+POfHysg==",
+  "dgSpecHash": "AkubzrE/L5kjtceJ/j87KtfqtfcrT7dOJS6qR3kt54SPZOCruPT/i3i7T0JRdy9WqG/amFV2laFz5fzbKvfJ1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\DimitriAndre\\source\\repos\\Thriftshop\\ThriftshopWeb\\ThriftshopWeb.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.0-rc.1.21452.15\\microsoft.aspnetcore.authentication.facebook.6.0.0-rc.1.21452.15.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\DimitriAndre\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
